@@ -62,15 +62,14 @@ Follow [tutorial](https://github.com/EdjeElectronics/TensorFlow-Object-Detection
 
         > **python generate_tfrecord.py** --set_root --xml_input_path=*files/xmls/* --image_input_path=*files/imgs/* --output_path=*files/output/*
     
-2. Next step -- [config preperation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md) -- is to prepare *config* file. Config file that was used in the project is provided under following project folder:
+2. Next step -- [config preperation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md) -- is to prepare *config* file. 
 
-         You may use it, but make sure that the paths within the config file are correctly pointing to the right files. 
         
-        [Download model](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)  matching to the config. If you wish to follow the same model, get the:
-        
-        > faster_rcnn_inception_v2_coco
-        
-        Finally, follow [running locally](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md) Tensorflow information, to run the training. Remember to follow the structure within *object_detection* folder from Tensorflow and check paths in *pipeline.config*.
+     [Download model](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)  matching to the config. If you wish to follow the same model, get the:
+
+     > faster_rcnn_inception_v2_coco
+
+     Finally, follow [running locally](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md) Tensorflow information, to run the training. Remember to follow the structure within *object_detection* folder from Tensorflow and check paths in *pipeline.config*.
             
 2. **Deploy your OD model** 
     1. For analysis of model performance you may use tensorboard (see [running locally](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md))
